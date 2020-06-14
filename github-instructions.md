@@ -27,8 +27,8 @@ In order to access command prompt, you have to go to your start menu on the lowe
 In this application, you will be able to use a multitude of commands to access and control your computer. But in this document, I will only teach you how to access files and use basic git commands for learning.
 
 * C:, D:, E: - choose whatever drive you would like to be in  
-* dir (directory) - list out files and folders in the current directory (ls for MacOS)  
-* cd (change directory) - change your current directory to the folder that you would like to access, you can do this with the folder's name, or with . for current directory, .. for parent directory, and ~ for root (uppermost) directory  
+* cd (change directory) - change your current directory to the folder that you would like to access, you can do this with the folder's name, or with . for current directory, .. for parent directory, and ~ for root (uppermost) directory
+* dir (directory) - list out files and folders in the current directory (ls for MacOS)   
 
 ![](./images/intro-github/github-4.JPG)
 
@@ -77,12 +77,31 @@ Once you have your key copied, you will go back to the SSH key addition page you
 This should show you that you now have a new key in your SSH keys list.
 
 ## Cloning Repositories to Your Local Computer
+In order to download the files from remote repositories (my files for you, initially), you will first need to use command prompt/terminal to navigate to the folder where you want the files to be first. You will then type "git clone {link of the repository}", which in this case will be "git clone https://github.com/nathnet/PythonLearningProjects.git"
+
 ![](./images/intro-github/github-15.JPG)
+
+Your computer will then start loading all the files from remote repository to your local directory. You can verify once the download is done by either going to your folder directly or type dir/ls on your command prompt/terminal.
+
 ![](./images/intro-github/github-16.JPG)
 
 ## Branching Git For Your Own Implementation
+For this section, you will get to branch (create) your own branch of implementation on each project. To do this, you will learn a few more commands.
+
+Git:
+* branch - if used without any names followed, you will be viewing what branches are available to you. If used with a name after, you will create a new branch for development. If used with " -d {name}", that will delete the branch that was created.
+* status - check the status change in your files in the repository whether there are new files, folders, changes made to any files or folders or not.
+
+In the figure below, I created a new branch called "tugn" and I checked what branches I had.
+
 ![](./images/intro-github/github-17.JPG)
+
+However, I wasn't satisfied by the branch I created! So I deleted the branch "tugn", checked the name of all my branches. Then, I created a new branch called "tung" and checked again. There I went! Finally properly named!
+
 ![](./images/intro-github/github-18.JPG)
+
+I then used "checkout" to access the branch I created. I checked for which branch I was on using "status" and yes! I was on tung branch.
+
 ![](./images/intro-github/github-19.JPG)
 
 ## Pushing Your Files Back to Repositories
