@@ -141,7 +141,7 @@ After having added all the files to staged area, I committed the changes with th
 
 ![](./images/intro-github/github-22.JPG)
 
-After having committed my changes, I pushed it to remote repository, which made all these documents available to all of you who are reading this.
+After having committed my changes, I pushed it to remote repository, which made all these documents available to all of you who are reading this. After you type "git push" and press enter, you will be asked the password in which you created when you created your public SSH key file.
 
 ![](./images/intro-github/github-23.JPG)
 
